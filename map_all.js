@@ -10,7 +10,7 @@ var cstage = 1
 var remap = 0
 var score = 0
 var w = ""
-mapboxgl.accessToken = 'pk.eyJ1IjoiamVmZmFsbGVuIiwiYSI6ImNrZnprcWlrdTAzYTUycnBnM2x1c21ndTYifQ.NHY2--vC3nJjOHuk2q-siA';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2V2ZXJvYm8iLCJhIjoiY2trdTUxbWplMWs4ZDJxcW4wNDN6eTJ4bCJ9.nCWWPY2Lb8WuEngFH3GKNQ';
 
 
 
@@ -110,7 +110,7 @@ function showMap(level, stage) {
 
   var map = new mapboxgl.Map({
       container: 'map', // container id
-      style: 'mapbox://styles/jeffallen/cj8rwyt7obvqq2sr8ygoi9dh2', // stylesheet location
+      style: 'mapbox://styles/severobo/ckku5e4l92qh117n4v7kmg91k', // stylesheet location
       center: [cx,cy], // starting position [lng, lat]
       zoom: 11.5, // starting zoom
       maxZoom: 16,
