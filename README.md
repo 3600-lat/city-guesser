@@ -8,7 +8,7 @@ The game is simple. You are given an unlabeled street map, and you have to guess
 
 The data comes from Natural Earth (populated places) and OpenStreetMap (base map), and the tiles come from MapBox.
 
-## Original code
+## Original code
 
 This code is adapted from https://github.com/jamaps/city-guesser by Jeff Allen. Play the original game at: http://jamaps.github.io/city-guesser/index.html.
 
@@ -32,7 +32,7 @@ To create the data and instances by country:
 - fix the init + state management
 - remove console messages
 
-## Done
+## Done
 
 - shp encoding
 - reproductible creation of geojson
