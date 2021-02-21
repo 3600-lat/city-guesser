@@ -1,0 +1,22 @@
+{
+  "name": "city-guesser",
+  "version": "1.0.0",
+  "description": "City-Guesser is a map-based quiz game designed to test one's knowledge of urban form and network structure of cities around the world.",
+  "main": "map_all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3600-lat/city-guesser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3600-lat/city-guesser/issues"
+  },
+  "homepage": "https://github.com/3600-lat/city-guesser#readme",
+  "devDependencies": {
+    "ndjson-cli": "^0.3.1"
+  }
+}
