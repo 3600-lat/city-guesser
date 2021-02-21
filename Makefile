@@ -40,7 +40,7 @@ ${SHP}: ${ZIP}
 # Convert to GeoJSON
 ${NDJSON}: ${SHP} node_modules
 	mkdir -p $(dir $@)
-	npx shp2json -n $< > $@
+	npx shp2json --encoding "utf-8" -n $< > $@
 
 # Filter by country
 tmp/places/%.json: ${NDJSON}
