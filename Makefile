@@ -13,9 +13,9 @@ ZIP = download/${DATAFILE}.zip
 SHP = tmp/shp/${DATAFILE}.shp
 NDJSON = tmp/ndjson/${DATAFILE}.ndjson
 PLACES = $(addprefix tmp/places/,$(addsuffix .json,$(COUNTRIES)))
-PUBLIC = $(addprefix public/,$(addsuffix /,$(COUNTRIES)))
+PUBLIC_COUNTRIES = $(addprefix public/,$(addsuffix /,$(COUNTRIES)))
 
-all: ${PUBLIC}
+all: ${PUBLIC_COUNTRIES} public/index.html
 
 # Install dependencies
 node_modules:
@@ -48,10 +48,14 @@ tmp/places/%.json: ${NDJSON}
 	npx ndjson-filter 'd.properties.iso_a2 === "$*"' < $< | npx ndjson-reduce | npx ndjson-map '{type: "FeatureCollection", features: d}' > $@
 
 # Copy every country to its own public directory, with the HTML and JS files
-public/%/: tmp/places/%.json src/
+public/%/: tmp/places/%.json src
 	mkdir -p $@
 	cp $< $@places.json
-	cp src/* $@
+	cp src/country/* $@
+
+public/index.html:
+	cp src/index.html $@
+
 
 # -- Clean
 
