@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/3600-lat/city-guesser#readme",
   "devDependencies": {
-    "ndjson-cli": "^0.3.1"
+    "ndjson-cli": "^0.3.1",
+    "shapefile": "^0.6.6"
   }
 }

@@ -40,9 +40,7 @@ ${SHP}: ${ZIP}
 # Convert to GeoJSON
 ${NDJSON}: ${SHP} node_modules
 	mkdir -p $(dir $@)
-	ogr2ogr -f GeoJSON $@ $<
-	npx ndjson-cat < $@ | npx ndjson-split 'd.features' > $*.ndjson
-	mv $*.ndjson $@
+	npx shp2json -n $< > $@
 
 # Filter by country
 tmp/places/%.json: ${NDJSON}
