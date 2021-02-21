@@ -1,12 +1,16 @@
-### city-guesser
+# City-Guesser
 
 City-Guesser is a map-based quiz game designed to test one's knowledge of urban form and network structure of cities around the world.
 
-Play here: http://jamaps.github.io/city-guesser/index.html
+Play here: https://3600.lat/city-guesser/
 
 The game is simple. You are given an unlabeled street map, and you have to guess which city it represents. If you guess correctly, you move onto the next round. Each round gets progressively more difficult as more obscure cities are added into the choice set. A level counter and game score is updated each time you guess correctly. If you guess wrong, you have to restart, but a high score is saved for future reference.
 
 The data comes from Natural Earth (populated places) and OpenStreetMap (base map), and the tiles come from MapBox.
+
+## Original code
+
+This code is adapted from https://github.com/jamaps/city-guesser by Jeff Allen. Play the original game at: http://jamaps.github.io/city-guesser/index.html.
 
 ## Install
 

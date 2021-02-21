@@ -1,6 +1,6 @@
 {
   "name": "city-guesser",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "City-Guesser is a map-based quiz game designed to test one's knowledge of urban form and network structure of cities around the world.",
   "main": "map_all.js",
   "scripts": {
